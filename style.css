@@ -1,0 +1,285 @@
+/* ***********************GENERAL CLASS STYLING STARTS HERE***************************** */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.flex-dirn-col {
+  flex-direction: column;
+}
+.ring {
+  border: 3px solid tomato;
+}
+.max-container {
+  max-width: 1600px;
+  margin: auto;
+}
+button {
+  cursor: pointer;
+}
+#submit-btn button {
+  cursor: pointer;
+}
+/* ***********************GENERAL CLASS STYLING ENDS HERE***************************** */
+
+/* ************************* CSS FOR FORM PART STARTS HERE *************************** */
+.main-section {
+  padding: 20px;
+}
+.form-part {
+  width: 55%;
+  padding: 10px;
+  background-color: rgb(151, 248, 216);
+  /* border: 3px solid red; */
+  padding: 20px;
+}
+.add-part {
+  width: 40%;
+}
+
+#form .section {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  margin: 5px;
+}
+#form .section span {
+  padding: 7px;
+  font-size: 1.5rem;
+  margin: auto 15px;
+  text-align: center;
+}
+#form .section input {
+  padding: 7px;
+  border-radius: 7px;
+  font-size: 1rem;
+  margin: auto 15px;
+  box-shadow: 0 0 3px;
+  outline: none;
+}
+
+.captcha-and-submit-part {
+  display: flex;
+  justify-content: space-around;
+  padding: 7px;
+}
+.captcha-and-submit-part .captcha {
+  /* border: 1px solid red; */
+  width: 60%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.captcha-and-submit-part #submit-btn {
+  /* border: 3px solid red; */
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(251, 93, 93);
+  font-size: 1.2rem;
+  color: white;
+  border: none;
+}
+
+@media only screen and (max-width: 425px) {
+  #form .section span {
+    font-size: 1.2rem;
+    margin: auto 15px;
+    text-align: center;
+    width: 100%;
+  }
+  #form .section input {
+    padding: 5px;
+    border-radius: 7px;
+    font-size: 0.8rem;
+    margin: auto 10px;
+    box-shadow: 0 0 3px;
+    outline: none;
+    width: 80%;
+    margin-left: 30px;
+  }
+
+  .captcha-and-submit-part .captcha {
+    width: 60%;
+    font-size: 12px;
+    padding: 1px;
+  }
+  .captcha-and-submit-part #submit-btn {
+    /* width: 20%; */
+    font-size: 16px;
+  }
+}
+/* **************************** CSS FOR FORM PART ENDS HERE ************************** */
+
+/* **************************** CSS FOR ADD PART SATARTS HERE *********************** */
+.add-part {
+  padding: 10px;
+  background-color: rgb(162, 243, 196);
+}
+.social-icons-part {
+  width: 20%;
+}
+.social-icons-part img {
+  width: 50px;
+}
+.address-part {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  line-height: 1.5;
+  color: #333;
+}
+
+@media only screen and (max-width: 425px) {
+  .social-icons-part img {
+    width: 40px;
+  }
+  .address-part {
+    width: 60%;
+  }
+  .address-part h2 {
+    font-size: 18px;
+  }
+  .address-part h3 {
+    font-size: 12px;
+  }
+}
+/* **************************** CSS FOR ADD PART ENDS HERE ************************** */
+
+
+
+/* **************************** CSS FOR ADD PART ENDS HERE ************************** */
+/* #submit-btn {
+  width: 10%;
+  display: flex;
+  margin: auto auto;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(251, 93, 93);
+  font-size: 1.4rem;
+  padding: 7px;
+  color: white;
+  border: none;
+  box-shadow: 1px 1px 3px;
+  margin-bottom: 10px;
+} */
+
+/* **************************** CSS FOR ADD PART ENDS HERE ************************** */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *************************************************************** */
+@media only screen and (max-width: 780px) {
+  .main-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .form-part {
+    height: max-content;
+    background-color: antiquewhite;
+    width: 100%;
+  }
+  .add-part {
+    /* border: 3px solid yellow; */
+    height: fit-content;
+    background-color: pink;
+    width: 100%;
+  }
+}
+/* *************************************************************** */
+
+/* ******************* CSS STYLING FOR CARDS SECTION STARTS HERE ************************ */
+.image-card-section-box {
+  background-color: #333;
+}
+.image-card-section-box p {
+  color: white;
+  padding: 20px;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  text-align: center;
+}
+.image-card-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  background-color: #333;
+}
+
+.cards {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.356),
+    0 6px 20px 0 rgba(0, 0, 0, 0.514);
+  border: 20px solid white;
+  width: 70%;
+}
+
+.image-cards {
+  cursor: pointer;
+  width: 100%;
+}
+
+.card-details {
+  margin-top: -5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-card-section .card-details {
+  background-color: #eaf6fe;
+}
+
+.image-card-section .card-details h3 {
+  padding-top: 10px;
+  padding-bottom: 7px;
+  color: #154781;
+}
+
+/* RESPONIVENESS */
+@media only screen and (max-width: 768px) {
+  .image-card-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .cards {
+    border: 10px solid white;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .cards {
+    font-size: 8px;
+  }
+}
+.hidden {
+  display: none;
+}
+/* ********************* CSS STYLING FOR CARDS SECTION ENDS HERE ******************** */

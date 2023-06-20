@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEW</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script defer src="app.js"></script>
+
+</head>
+<body>
+    <!-- MAIN SECTION WHICH INCLUDES FORM AND ADDRESS -->
+    <main class="main-section flex">
+        <section class="form-part">
+            <form id="form">
+                <div class="flex section"><span>Name</span><input type="text" id="name" name="name" placeholder="Enter Your Name here ..." required></div>
+                <div class="flex section"><span>Email</span><input type="email" id="email" name="email" placeholder="Enter Your Email here ..." required></div>
+                <div class="flex section"><span>Phone</span><input type="tel" id="phone" name="phone" value="+1" placeholder="Enter Your Phone No here ..." required></div>
+                 
+               
+                <div class="captcha-and-submit-part">
+                  <span class="g-recaptcha captcha" data-sitekey=" 6LcLqw4mAAAAAOvBcHKwubl6k54xYB7Kvt2SjrlI">{$ AREA FOR CAPTCHA $}</span>
+                  <button type="submit" id="submit-btn">Submit</button>
+                </div>
+            </form>
+        </section>
+        
+        <section class="add-part flex">
+            <div class="social-icons-part flex flex-dirn-col">
+                <a href="#"><img src="images/unnamed.png" /></a>
+                <a href="#"><img src="images/unnamed (1).png" /></a>
+                <a href="#"><img src="images/unnamed (2).png" /></a>         
+            </div>   
+            <div class="address-part">
+                <h2>Adapt-a-Website</h2>
+                <h2>+1206.905.9614</h2>
+                <h3>info@adaptawebsite.com</h3>
+                <h2>Montreal,QC</h2>
+                <h2>Canada</h2>  
+            </div>
+        </section>
+    </main>
+
+
+    <!-- DUMMY BUTTON -->
+    <!-- <button id="submit-btn">Submit</button> -->
+
+
+    <!-- IMAGES SECTION PART -->
+    <section class="image-wrapper image-card-section-box hidden">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis eaque magnam reprehenderit nesciunt natus harum?</p>      
+        <section class="image-card-section flex">
+            <div class="cards">
+                <img src="images/image2.jpg" alt="" class="image-cards">
+                <div class="card-details">
+                    <h3>MAGIC BOX</h3>
+                    <button>Button</button>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="images/image3.jpg" alt="" class="image-cards">
+                <div class="card-details">
+                    <h3>MAGIC BOX</h3>
+                    <button>Button</button>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="images/image2.jpg" alt="" class="image-cards">
+                <div class="card-details">
+                    <h3>MAGIC BOX</h3>
+                    <button>Button</button>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="images/image3.jpg" alt="" class="image-cards">
+                <div class="card-details">
+                    <h3>MAGIC BOX</h3>
+                    <button>Button</button>
+                </div>
+            </div>
+        </section>
+    </section>    
+</body>
+</html>
